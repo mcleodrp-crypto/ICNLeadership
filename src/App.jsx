@@ -63,7 +63,7 @@ function App() {
       {/* HERO */}
       <section className="hero section">
         <div className="inner-narrow">
-          <h1>Executive Coaching for Leaders Maximizing Their Impact</h1>
+          <h1>Empowering Educational Leaders to Achieve Extraordinary Impact</h1>
           <p>
             Impact Coaching Network partners with high-performing leaders to sharpen executive presence, expand perspective, and design systems that sustain impact.
           </p>
