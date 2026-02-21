@@ -1,0 +1,303 @@
+import React, { useState } from "react";
+import "./App.css";
+
+function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  return (
+    <div className="container">
+
+      {/* NAVIGATION */}
+      <header className="navbar">
+        <div className="nav-container">
+          <div className="logo">
+            <span className="logo-primary">Impact</span>
+            <span className="logo-secondary">Coaching Network</span>
+          </div>
+
+          {/* Desktop nav */}
+          <nav className="nav-desktop">
+            <a href="#about">About</a>
+            <a href="#who">Who We Work With</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a
+              href="https://calendar.app.google/ea8WhHeknLZuqffu8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-cta"
+            >
+              Schedule
+            </a>
+          </nav>
+
+          {/* Mobile menu button */}
+          <button
+            className="nav-mobile-toggle"
+            aria-label="Open menu"
+            onClick={() => setMenuOpen((v) => !v)}
+          >
+            Menu
+          </button>
+        </div>
+
+        {/* Mobile dropdown */}
+        {menuOpen && (
+          <div className="nav-mobile">
+            <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
+            <a href="#who" onClick={() => setMenuOpen(false)}>Who We Work With</a>
+            <a href="#services" onClick={() => setMenuOpen(false)}>Services</a>
+            <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
+            <a
+              href="https://calendar.app.google/ea8WhHeknLZuqffu8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-mobile-cta"
+              onClick={() => setMenuOpen(false)}
+            >
+              Schedule a Call
+            </a>
+          </div>
+        )}
+      </header>
+
+      {/* HERO */}
+      <section className="hero section">
+        <div className="inner-narrow">
+          <h1>Executive Coaching for Leaders Maximizing Their Impact</h1>
+          <p>
+            Impact Coaching Network partners with high-performing leaders to sharpen executive presence, expand perspective, and design systems that sustain impact.
+          </p>
+          <div className="buttons">
+            <a href="https://calendar.app.google/ea8WhHeknLZuqffu8" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="primary-btn">
+              Schedule a 30-Minute Strategy Call            
+            </a>
+            <a href="#contact" className="secondary-btn">
+              Start a Conversation
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ABOUT */}
+      <section id="about" className="about section">
+        <div className="inner">
+          <div className="about-grid">
+          <img
+            src="/ryan-mcleod-headshot.jpg"
+            alt="Ryan McLeod Headshot"
+            className="headshot"
+          />
+          <div>
+            <h2>Ryan McLeod, Ed.D.</h2>
+
+            <p className="credentials">
+              Former Superintendent • Newfield Network (ICF-accredited program)
+            </p>
+
+            <p>
+              Ryan McLeod brings more than 30 years of experience in education and public service, including over two decades serving in diverse school districts as a teacher, building leader, central office administrator, and superintendent.
+            </p>
+
+            <p>
+              As Superintendent of Eastpointe Community Schools in Michigan, he led comprehensive district reconfiguration efforts—designing and implementing systems for performance management, talent development, student support, collaborative teacher practice, and instructional leadership.
+            </p>
+
+            <p>
+              Through executive coaching and organizational consulting, he helps high-performing leaders strengthen executive presence, expand perspective, and build systems that elevate leadership and organizational effectiveness. His work is structured, reflective, and grounded in practical experience—helping leaders translate clarity into sustained impact.
+            </p>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      {/* WHO */}
+      <section id="who" className="who section">
+        <div className="inner-narrow">
+        <h2>Designed for High-Performing Leaders</h2>
+        <p>
+          This work is designed for superintendents, district leaders, principals, and emerging leaders who are already strong in their roles and ready to operate at a higher level of clarity and influence.
+        </p>
+        </div>
+      </section>
+
+      {/* SERVICES */}
+      <section id="services" className="services section">
+        <div className="inner">
+          <div className="services-grid">
+
+            <div className="service-card">
+              <h3>Executive Leadership Coaching</h3>
+              <p>
+                Individual and small-group executive coaching focused on expanding perspective, strengthening executive presence, and increasing leadership effectiveness.
+              </p>
+            </div>
+
+            <div className="service-card">
+              <h3>Systems Development & Consulting</h3>
+              <p>
+                Strategic systems consulting focused on performance management, talent development, instructional leadership structures, and organizational design.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* ENGAGEMENT MODEL */}
+      <section className="engagement section">
+        <div className="inner">
+          <div className="inner-narrow">
+            <h2>How Engagements Begin</h2>
+            <p>
+              Engagements are structured to create clarity, alignment, and sustained impact.
+            </p>
+          </div>
+
+          <div className="engagement-grid">
+            <div className="engagement-card">
+              <h3>Clarify</h3>
+              <p>Define outcomes, constraints, and the leadership moments that matter most.</p>
+            </div>
+
+            <div className="engagement-card">
+              <h3>Design</h3>
+              <p>Identify shifts in thinking and behavior—and design practical moves that fit your context.</p>
+            </div>
+
+            <div className="engagement-card">
+              <h3>Sustain</h3>
+              <p>Build routines and systems that reinforce progress and support lasting impact.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="cta section">
+        <div className="inner-narrow">
+          <h2>Next Level Leadership Requires Intentional Reflection</h2>
+          <a
+            href="https://calendar.app.google/ea8WhHeknLZuqffu8"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="primary-btn large"
+          >
+            Schedule a 30-Minute Strategy Call
+          </a>
+        </div>
+      </section>
+
+      {/* CONTACT */}
+      <section id="contact" className="contact section">
+        <div className="inner-narrow">
+        <h2>Contact</h2>
+        <p>
+          If you're exploring executive coaching or organizational consulting, share a brief message below. I will follow up personally to discuss next steps.
+        </p>
+
+        <ContactForm />
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="footer">
+        <div className="inner footer-container">
+          <div>
+            <h3>Impact Coaching Network</h3>
+            <p>
+              Executive Coaching and Strategic Consulting
+            </p>
+          </div>
+
+          <div className="footer-links">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a 
+              href="https://calendar.app.google/ea8WhHeknLZuqffu8"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Schedule a Call
+            </a>
+          </div>
+        </div>
+
+        <div className="footer-bottom">
+          © {new Date().getFullYear()} Impact Coaching Network. All rights reserved.
+        </div>
+      </footer>
+
+    </div>
+  );
+}
+
+function ContactForm() {
+  const [status, setStatus] = useState("idle");
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    setStatus("submitting");
+
+    const form = event.target;
+    const data = new FormData(form);
+
+    const response = await fetch("https://formspree.io/f/xnjbbyqk", {
+      method: "POST",
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    if (response.ok) {
+      setStatus("success");
+      form.reset();
+    } else {
+      setStatus("error");
+    }
+  }
+
+  if (status === "success") {
+    return (
+      <div className="success-message">
+        <h3>Message Sent</h3>
+        <p>
+          Thank you for reaching out. I will respond personally within 24 hours.
+        </p>
+      </div>
+    );
+  }
+
+  return (
+    <form onSubmit={handleSubmit} className="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea
+        name="message"
+        placeholder="Your Message"
+        rows="5"
+        required
+      ></textarea>
+
+      <button type="submit" className="primary-btn">
+        {status === "submitting" ? "Sending..." : "Send Message"}
+      </button>
+
+        <p className="form-note">
+          Coaching engagements are limited to ensure depth and focus.
+        </p>
+
+      {status === "error" && (
+        <p className="error-message">
+          Something went wrong. Please try again.
+        </p>
+      )}
+    </form>
+  );
+}
+
+export default App;
