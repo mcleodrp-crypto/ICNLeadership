@@ -94,9 +94,7 @@ function App() {
             <h2>Ryan McLeod, Ed.D.</h2>
 
             <p className="credentials">
-              Executive Leadership Coach
-              Former Superintendent
-              Newfield Trained Coach (ICF-accredited program)              
+              Executive Leadership Coach • Former Superintendent • Newfield Trained Coach (ICF-accredited program)              
             </p>
 
             <p>
