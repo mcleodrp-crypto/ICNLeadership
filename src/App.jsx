@@ -94,6 +94,7 @@ function App() {
             <h2>Ryan McLeod, Ed.D.</h2>
 
             <p className="credentials">
+              Executive Leadership Coach
               Former Superintendent • Newfield Network (ICF-accredited program)
             </p>
 
@@ -227,7 +228,7 @@ function App() {
         </div>
 
         <div className="footer-bottom">
-          © {new Date().getFullYear()} Impact Coaching Network. All rights reserved.
+          © {new Date().getFullYear()} Impact Coaching Network, LLC. All rights reserved.
         </div>
       </footer>
 
