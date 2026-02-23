@@ -127,7 +127,7 @@ function App() {
 
       {/* SERVICES */}
       <section id="services" className="services section">
-        <div className="inner-narrow">
+        <div className="inner">
           <div className="services-grid">
 
             <div className="service-card">
@@ -145,9 +145,11 @@ function App() {
             </div>
 
           </div>
-          <p>
-            Coaching engagements are structured in focused phases — beginning with a strategic diagnostic and progressing into multi-month coaching partnerships that deepen perspective, strengthen execution, and create measurable results.
-          </p>
+          <div className="inner-narrow">
+            <p>
+              Coaching engagements are structured in focused phases — beginning with a strategic diagnostic and progressing into multi-month coaching partnerships that deepen perspective, strengthen execution, and create measurable results.
+            </p>
+          </div>
         </div>
       </section>
 
