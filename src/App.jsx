@@ -94,11 +94,9 @@ function App() {
             <h2>Ryan McLeod, Ed.D.</h2>
 
             <p className="credentials">
-              <pre>
-                Executive Leadership Coach
-                Former Superintendent
-                Newfield Coach Training (ICF-accredited program)
-              </pre>
+              Executive Leadership Coach
+              <br>Former Superintendent</br>
+              <br>Newfield Trained Coach (ICF-accredited program)</br>              
             </p>
 
             <p>
@@ -129,7 +127,7 @@ function App() {
 
       {/* SERVICES */}
       <section id="services" className="services section">
-        <div className="inner">
+        <div className="inner-narrow">
           <div className="services-grid">
 
             <div className="service-card">
