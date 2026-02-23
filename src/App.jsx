@@ -94,8 +94,11 @@ function App() {
             <h2>Ryan McLeod, Ed.D.</h2>
 
             <p className="credentials">
-              Executive Leadership Coach
-              Former Superintendent • Newfield Network (ICF-accredited program)
+              <pre>
+                Executive Leadership Coach
+                Former Superintendent
+                Newfield Coach Training (ICF-accredited program)
+              </pre>
             </p>
 
             <p>
@@ -103,7 +106,7 @@ function App() {
             </p>
 
             <p>
-              As Superintendent of Eastpointe Community Schools in Michigan, he led comprehensive district reconfiguration efforts—designing and implementing systems for performance management, talent development, student support, collaborative teacher practice, and instructional leadership.
+              As Superintendent, he led comprehensive district reconfiguration efforts—designing and implementing systems for performance management, talent development, student support, collaborative teacher practice, and instructional leadership.
             </p>
 
             <p>
@@ -144,6 +147,9 @@ function App() {
             </div>
 
           </div>
+          <p>
+            Coaching engagements are structured in focused phases — beginning with a strategic diagnostic and progressing into multi-month coaching partnerships that deepen perspective, strengthen execution, and create measurable results.
+          </p>
         </div>
       </section>
 
@@ -179,7 +185,7 @@ function App() {
       {/* CTA */}
       <section className="cta section">
         <div className="inner-narrow">
-          <h2>Next Level Leadership Requires Intentional Reflection</h2>
+          <h2>Sustained Impact Requires Intentional Leadership</h2>
           <a
             href="https://calendar.app.google/ea8WhHeknLZuqffu8"
             target="_blank"
