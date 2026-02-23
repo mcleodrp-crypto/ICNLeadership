@@ -95,8 +95,8 @@ function App() {
 
             <p className="credentials">
               Executive Leadership Coach
-              <br>Former Superintendent</br>
-              <br>Newfield Trained Coach (ICF-accredited program)</br>              
+              Former Superintendent
+              Newfield Trained Coach (ICF-accredited program)              
             </p>
 
             <p>
