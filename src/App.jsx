@@ -91,10 +91,14 @@ function App() {
             className="headshot"
           />
           <div>
-            <h2>Ryan McLeod, Ed.D.</h2>
+            <h2>Ryan McLeod, EdD</h2>
 
             <p className="credentials">
-              Executive Leadership Coach • Former Superintendent • Newfield Trained Coach (ICF-accredited program)              
+              Executive Leadership Coach
+            </p>
+
+            <p className="credentials-sub">
+              Former Superintendent • Newfield Network (ICF-accredited program)
             </p>
 
             <p>

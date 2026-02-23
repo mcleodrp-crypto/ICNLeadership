@@ -101,9 +101,17 @@ h1, h2, h3, .logo {
 }
 
 .credentials {
-  font-size: 15px;
+  font-size: 16px;
+  color: #1e3a8a;
+  font-weight: 500;
+  margin-top: -10px;   /* pulls it closer to your name */
+  margin-bottom: 4px;  /* tight spacing before the sub-line */
+}
+
+.credentials-sub {
+  font-size: 14px;
   color: #64748b;
-  margin-top: -10px;
+  margin-top: 0;
   margin-bottom: 20px;
 }
 
