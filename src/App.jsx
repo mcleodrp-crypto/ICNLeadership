@@ -98,7 +98,7 @@ function App() {
             </p>
 
             <p className="credentials-sub">
-              Former Superintendent • Newfield Network (ICF-accredited program)
+              Former Superintendent • Newfield Trained (ICF-accredited)
             </p>
 
             <p>
