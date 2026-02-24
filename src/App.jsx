@@ -283,6 +283,13 @@ function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="contact-form">
+      <input
+        type="text"
+        name="_gotcha"
+        tabIndex="-1"
+        autoComplete="off"
+        className="hp-field"
+      />
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <textarea

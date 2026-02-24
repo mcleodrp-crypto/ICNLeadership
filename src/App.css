@@ -216,6 +216,15 @@ h1, h2, h3, .logo {
   align-self: center;
 }
 
+.hp-field {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .success-message {
   background: #f1f5f9;
   padding: 40px;
