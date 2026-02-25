@@ -122,17 +122,18 @@ function App() {
       {/* WHO */}
       <section id="who" className="who section">
         <div className="inner-narrow">
-        <h2>Designed for High-Performing Leaders</h2>
-        <p>
-          This work is designed for superintendents, district leaders, principals, and emerging leaders who are already strong in their roles and ready to operate at a higher level of clarity and influence.
-        </p>
+          <h2 className="section-title">Designed for High-Performing Leaders</h2>
+          <p className="section-lede">
+            This work is designed for superintendents, district leaders, principals, and emerging leaders who are already strong in their roles and ready to operate at a higher level of clarity and influence.
+          </p>
         </div>
       </section>
 
+      {/* APPROACH */}
       <section id="icn-system" className="icn-system section">
         <div className="inner-narrow">
-          <h2>Our Approach</h2>
-          
+          <h2 className="section-title">Our Approach</h2>
+
           <div className="icn-content">
             <div className="icn-text">
               <p>
@@ -160,7 +161,6 @@ function App() {
               />
             </div>
           </div>
-
         </div>
       </section>
 
