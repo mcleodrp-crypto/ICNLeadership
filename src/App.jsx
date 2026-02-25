@@ -127,6 +127,44 @@ function App() {
         </div>
       </section>
 
+      <section id="icn-system" className="icn-system section">
+        <div className="inner">
+
+          <h2 className="section-title">The ICN Coaching System</h2>
+          
+          <div className="icn-divider"></div>
+
+          <div className="icn-content">
+            <div className="icn-text">
+              <p>
+                Most coaching is episodic. Insightful conversations — disconnected from disciplined follow-through.
+              </p>
+
+              <p>
+                <strong>The ICN Coaching System is different.</strong>
+              </p>
+
+              <p>
+                It is built around a deliberate cycle of intentional preparation, strategic clarification, deliberate practice, and reflective inquiry — repeated over time until new ways of leading become integrated and sustained.
+              </p>
+
+              <p>
+                This structured approach is designed for leaders who are serious about disciplined growth and measurable impact.
+              </p>
+            </div>
+
+            <div className="icn-graphic">
+              <img
+                src="/icn-cycle-graphic.png"
+                alt="ICN Coaching System leadership development cycle"
+                className="icn-image"
+              />
+            </div>
+          </div>
+
+        </div>
+      </section>
+
       {/* SERVICES */}
       <section id="services" className="services section">
         <div className="inner">

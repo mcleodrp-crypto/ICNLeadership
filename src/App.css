@@ -115,6 +115,67 @@ h1, h2, h3, .logo {
   margin-bottom: 20px;
 }
 
+/* ICN Coaching System Section */
+
+.icn-system {
+  padding: 100px 0;
+  background-color: #ffffff;
+}
+
+.icn-system .section-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.icn-divider {
+  width: 80px;
+  height: 3px;
+  background-color: #0546ab;
+  margin: 20px auto 50px auto;
+}
+
+.icn-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.icn-text {
+  max-width: 720px;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #222222;
+  text-align: center;
+}
+
+.icn-text p {
+  margin-bottom: 24px;
+}
+
+.icn-text strong {
+  font-weight: 600;
+}
+
+.icn-graphic {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.icn-image {
+  max-width: 850px;
+  width: 100%;
+  height: auto;
+}
+
 .services {
   background: #f8fafc;
   display: block;
