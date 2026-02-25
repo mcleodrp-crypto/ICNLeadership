@@ -172,7 +172,7 @@ function App() {
               </p>
 
               <p>
-                This approach is designed for leaders who value disciplined growth and measurable impact.
+                This approach is designed for leaders who value growth and measurable impact.
               </p>
             </div>
 
