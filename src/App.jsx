@@ -3,7 +3,8 @@ import "./App.css";
 
 function App() {
   const navRef = useRef(null);
-
+  const [menuOpen, setMenuOpen] = useState(false);
+  
     useEffect(() => {
       function onKeyDown(e) {
         if (e.key === "Escape") setMenuOpen(false);
@@ -21,7 +22,7 @@ function App() {
         document.removeEventListener("mousedown", onClickOutside);
       };
     }, [menuOpen]);
-  const [menuOpen, setMenuOpen] = useState(false);
+  
   return (
     <div className="container" id="top">
 
