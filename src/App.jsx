@@ -18,6 +18,7 @@ function App() {
           <nav className="nav-desktop">
             <a href="#about">About</a>
             <a href="#who">Who We Work With</a>
+            <a href="#icn-system">Our Approach</a>
             <a href="#services">Services</a>
             <a href="#contact">Contact</a>
             <a
@@ -45,6 +46,7 @@ function App() {
           <div className="nav-mobile">
             <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
             <a href="#who" onClick={() => setMenuOpen(false)}>Who We Work With</a>
+            <a href="#icn-system" onClick={() => setMenuOpen(false)}>Our Approach</a>
             <a href="#services" onClick={() => setMenuOpen(false)}>Services</a>
             <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
             <a
