@@ -47,7 +47,7 @@ function App() {
               rel="noopener noreferrer"
               className="nav-cta"
             >
-              Schedule
+              Schedule a Call
             </a>
           </nav>
 
@@ -291,7 +291,7 @@ function App() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Schedule
+              Schedule a Call
             </a>
           </div>
         </div>
