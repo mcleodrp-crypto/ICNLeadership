@@ -19,21 +19,13 @@ h1, h2, h3, .logo {
   width: 100%;
 }
 
+#about, #who, #icn-system, #services, #contact {
+  scroll-margin-top: 100px;
+}
+
 /* LAYOUT WRAPPERS */
 .section {
   padding: 80px 20px;
-}
-
-/* Consistent section heading style */
-.section-title {
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  font-size: clamp(32px, 3vw, 44px);
-  line-height: 1.15;
-  letter-spacing: -0.02em;
-  text-align: center;
-  margin: 0 0 24px;
-  color: #111827; /* near-black */
 }
 
 /* Optional: consistent lead paragraph style */

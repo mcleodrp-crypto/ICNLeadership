@@ -1,18 +1,38 @@
 import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./App.css";
 
 function App() {
+  const navRef = useRef(null);
+
+    useEffect(() => {
+      function onKeyDown(e) {
+        if (e.key === "Escape") setMenuOpen(false);
+      }
+      function onClickOutside(e) {
+        if (menuOpen && navRef.current && !navRef.current.contains(e.target)) {
+          setMenuOpen(false);
+        }
+      }
+
+      document.addEventListener("keydown", onKeyDown);
+      document.addEventListener("mousedown", onClickOutside);
+      return () => {
+        document.removeEventListener("keydown", onKeyDown);
+        document.removeEventListener("mousedown", onClickOutside);
+      };
+    }, [menuOpen]);
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="container">
+    <div className="container" id="top">
 
       {/* NAVIGATION */}
-      <header className="navbar">
+      <header className="navbar" ref={navRef}>
         <div className="nav-container">
-          <div className="logo">
+          <a href="#top" className="logo" onClick={() => setMenuOpen(false)}>
             <span className="logo-primary">Impact</span>
             <span className="logo-secondary">Coaching Network</span>
-          </div>
+          </a>
 
           {/* Desktop nav */}
           <nav className="nav-desktop">
@@ -34,7 +54,9 @@ function App() {
           {/* Mobile menu button */}
           <button
             className="nav-mobile-toggle"
-            aria-label="Open menu"
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={menuOpen}
+            aria-controls="mobile-nav"
             onClick={() => setMenuOpen((v) => !v)}
           >
             Menu
@@ -43,7 +65,7 @@ function App() {
 
         {/* Mobile dropdown */}
         {menuOpen && (
-          <div className="nav-mobile">
+          <div className="nav-mobile" id="mobile-nav">
             <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
             <a href="#who" onClick={() => setMenuOpen(false)}>Who We Work With</a>
             <a href="#icn-system" onClick={() => setMenuOpen(false)}>Our Approach</a>
@@ -87,11 +109,12 @@ function App() {
       <section id="about" className="about section">
         <div className="inner">
           <div className="about-grid">
-          <img
-            src="/ryan-mcleod-headshot.jpg"
-            alt="Ryan McLeod Headshot"
-            className="headshot"
-          />
+            <img
+              src="/ryan-mcleod-headshot.jpg"
+              alt="Ryan McLeod Headshot"
+              className="headshot"
+              loading="lazy"
+            />
           <div>
             <h2>Ryan McLeod, EdD</h2>
 
@@ -122,7 +145,7 @@ function App() {
       {/* WHO */}
       <section id="who" className="who section">
         <div className="inner-narrow">
-          <h2 className="section-title">Designed for High-Performing Leaders</h2>
+          <h2>Designed for High-Performing Leaders</h2>
           <p className="section-lede">
             This work is designed for superintendents, district leaders, principals, and emerging leaders who are already strong in their roles and ready to operate at a higher level of clarity and influence.
           </p>
@@ -132,7 +155,7 @@ function App() {
       {/* APPROACH */}
       <section id="icn-system" className="icn-system section">
         <div className="inner-narrow">
-          <h2 className="section-title">Our Approach</h2>
+          <h2>Our Approach</h2>
 
           <div className="icn-content">
             <div className="icn-text">
@@ -149,7 +172,7 @@ function App() {
               </p>
 
               <p>
-                This structured approach is designed for leaders who are serious about disciplined growth and measurable impact.
+                This approach is designed for leaders who value disciplined growth and measurable impact.
               </p>
             </div>
 
@@ -158,6 +181,7 @@ function App() {
                 src="/icn-cycle-graphic.png"
                 alt="ICN Coaching System leadership development cycle"
                 className="icn-image"
+                loading="lazy"
               />
             </div>
           </div>
@@ -267,7 +291,7 @@ function App() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Schedule a Call
+              Schedule
             </a>
           </div>
         </div>
