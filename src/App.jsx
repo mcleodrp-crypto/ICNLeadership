@@ -133,8 +133,6 @@ function App() {
         <div className="inner-narrow">
           <h2>Our Approach</h2>
           
-          <div className="icn-divider"></div>
-
           <div className="icn-content">
             <div className="icn-text">
               <p>
