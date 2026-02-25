@@ -130,9 +130,8 @@ function App() {
       </section>
 
       <section id="icn-system" className="icn-system section">
-        <div className="inner">
-
-          <h2 className="section-title">The ICN Coaching System</h2>
+        <div className="inner-narrow">
+          <h2>The ICN Coaching System</h2>
           
           <div className="icn-divider"></div>
 
